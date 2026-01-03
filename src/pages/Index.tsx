@@ -1,7 +1,7 @@
 import { Download, Linkedin, Mail, Github } from "lucide-react";
 import { useState } from "react";
-import profileImage from "@/assets/profile-placeholder.jpg";
-import hoverImage from "@/assets/profile-hover.jpg";
+import profileImage from "@/assets/portrait.jpeg";
+import hoverImage from "@/assets/laughing.jpeg";
 
 const Index = () => {
   const [isHovered, setIsHovered] = useState(false);

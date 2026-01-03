@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // GitHub Pages needs assets served from the repo sub-path
+  base: "/my-minimalist-cv/",
   server: {
     host: "::",
     port: 8080,
