@@ -46,10 +46,10 @@ const Index = () => {
         {/* Name & Title */}
         <div className="space-y-2">
           <h1 className="text-3xl font-semibold tracking-tight text-foreground">
-            Your Name
+            Florian Brunner
           </h1>
           <p className="text-muted-foreground">
-            Software Engineer · Designer · Creator
+          Tech enthusiast · Sportsman · Young dad
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const Index = () => {
         {/* Social Icons */}
         <div className="flex items-center gap-6 pt-4">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/florianbrunner/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -77,7 +77,7 @@ const Index = () => {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="https://github.com/yourprofile"
+            href="https://github.com/flobrunner"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -86,7 +86,7 @@ const Index = () => {
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="mailto:your@email.com"
+            href="mailto:brunnerflorian85@gmail.com"
             className="text-muted-foreground hover:text-foreground transition-colors"
             aria-label="Email"
           >
@@ -97,7 +97,7 @@ const Index = () => {
 
       {/* Copyright Notice */}
       <footer className="absolute bottom-4 right-4 text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Your Name. All rights reserved.
+        © {new Date().getFullYear()} Florian Brunner. All rights reserved.
       </footer>
     </main>
   );

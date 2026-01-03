@@ -6,6 +6,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "skipLibCheck": true,
