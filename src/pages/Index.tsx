@@ -1,19 +1,11 @@
-import { Download, Linkedin, Mail, Github, Phone } from "lucide-react";
-import { useRef, useState } from "react";
+import { Download, Linkedin, Mail, Github } from "lucide-react";
+import { useState } from "react";
 import profileImage from "@/assets/portrait.jpeg";
 import hoverImage from "@/assets/laughing.jpeg";
-import staticNoise from "@/assets/static-noise.wav";
 import cvFile from "@/assets/cv.pdf";
 
 const Index = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
-  const handlePlayStatic = () => {
-    if (!audioRef.current) return;
-    audioRef.current.currentTime = 0;
-    void audioRef.current.play();
-  };
 
   return (
     <main className="min-h-screen flex items-center justify-center bg-background px-6 py-12 relative">
@@ -29,18 +21,7 @@ const Index = () => {
             alt="Profile photo"
             className="w-full h-full object-cover transition-opacity duration-300"
           />
-          {isHovered ? (
-            <button
-              type="button"
-              onClick={handlePlayStatic}
-              className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-white text-foreground shadow-lg border border-border transition-transform duration-200 hover:scale-105"
-              aria-label="Play call static sound"
-            >
-              <Phone className="w-6 h-6" />
-            </button>
-          ) : null}
         </div>
-        <audio ref={audioRef} src={staticNoise} preload="auto" />
 
         {/* Name & Title */}
         <div className="space-y-2">
